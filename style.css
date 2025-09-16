@@ -28,7 +28,7 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 /* Stili base per i titoli */
@@ -109,9 +109,9 @@ img {
 .button {
     background-color: var(--button-color);
     color: white;
-    padding: 8px 24px;
+    padding: 0.5rem 1.5rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -133,10 +133,10 @@ img {
 
 .hamburger-line {
     display: block;
-    width: 25px;
-    height: 3px;
+    width: 1.563rem;
+    height: 0.188rem;
     background-color: var(--logo-color);
-    margin: 5px 0;
+    margin: 0.313rem 0;
     transition: transform 0.3s ease;
 }
 
@@ -153,7 +153,7 @@ img {
         top: 0;
         right: 0;
         height: 100vh;
-        width: 250px;
+        width: 15.625rem;
         background-color: var(--hero-footer-bg);
         flex-direction: column;
         padding: 5rem 2rem;
@@ -177,6 +177,6 @@ img {
     }
 
     .container {
-        padding: 0 15px;
+        padding: 0 0.938rem;
     }
 }
