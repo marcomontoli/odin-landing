@@ -26,7 +26,7 @@ body {
 /* Stili base per i contenitori */
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
     padding: 0 1.25rem;
 }
@@ -71,7 +71,7 @@ img {
 }
 
 .logo {
-    font-size: 1.5rem; /* 24px convertiti in rem */
+    font-size: 1.5rem;
     color: var(--logo-color);
     font-weight: 500;
 }
@@ -95,7 +95,65 @@ img {
 .hero {
     background-color: var(--hero-footer-bg);
     color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
     padding: 4rem 0;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3rem; /* 48px convertito in rem */
+    font-weight: 900;
+    color: #f9faf8;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.125rem; /* 18px convertito in rem */
+    color: #e5e7eb;
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.placeholder {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    padding: 6rem 2rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+
+/* Media Query per il responsive design della hero section */
+@media screen and (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
 }
 
 /* Stili per footer */
@@ -107,7 +165,7 @@ img {
 
 /* Stili per i bottoni */
 .button {
-    background-color: var(--button-color);
+    background-color: var(--button-color); 
     color: white;
     padding: 0.5rem 1.5rem;
     border: none;
