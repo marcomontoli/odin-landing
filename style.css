@@ -198,6 +198,50 @@ img {
     transition: transform 0.3s ease;
 }
 
+/* Stili per la sezione informazioni */
+.info-section {
+    min-height: 100vh;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.info-section h2 {
+    font-size: 2.25rem; /* 36px convertito in rem */
+    font-weight: 900;
+    color: #1f2937;
+    margin-bottom: 3rem;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    flex: 0 1 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.box-square {
+    width: 10rem;
+    height: 10rem;
+    border: 4px solid #3882f6;
+    border-radius: 1rem; /* 16px convertito in rem */
+}
+
+.info-box p {
+    color: #1f2937;
+    font-size: 1rem;
+    max-width: 10rem;
+}
+
 /* Media Query per il responsive design */
 @media screen and (max-width: 768px) {
     .hamburger {
