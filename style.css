@@ -114,14 +114,14 @@ img {
 }
 
 .hero-text h1 {
-    font-size: 3rem; /* 48px convertito in rem */
+    font-size: calc(2rem + 1.5vw); /* Parte da ~32px e cresce con lo schermo */
     font-weight: 900;
     color: #f9faf8;
     margin-bottom: 1rem;
 }
 
 .hero-text p {
-    font-size: 1.125rem; /* 18px convertito in rem */
+    font-size: calc(1rem + 0.3vw); /* Parte da ~16px e cresce gradualmente */
     color: #e5e7eb;
     margin-bottom: 2rem;
 }
@@ -205,10 +205,15 @@ img {
     text-align: center;
     display: flex;
     align-items: center;
+    padding: 4rem 0;
+}
+
+.info-section .container {
+    width: 100%;
 }
 
 .info-section h2 {
-    font-size: 2.25rem; /* 36px convertito in rem */
+    font-size: calc(1.5rem + 1vw); /* Parte da ~24px e cresce con lo schermo */
     font-weight: 900;
     color: #1f2937;
     margin-bottom: 3rem;
@@ -240,6 +245,36 @@ img {
     color: #1f2937;
     font-size: 1rem;
     max-width: 10rem;
+}
+
+/* Stili per la sezione citazione */
+.quote-section {
+    min-height: 100vh;
+    background-color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.quote-content {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.quote-text {
+    font-size: calc(1.5rem + 1vw); /* Parte da ~24px e cresce con lo schermo */
+    font-weight: 300;
+    color: #1f2937;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.quote-author {
+    font-size: calc(1.2rem + 0.4vw); /* Parte da ~19px e cresce gradualmente */
+    font-weight: 700;
+    color: #1f2937;
+    text-align: right;
+    margin-right: 2rem;
 }
 
 /* Media Query per il responsive design */
